@@ -1,11 +1,10 @@
 {
     "name": "XHRHook",
     "version": "1.0",
-    "description": "Hook all XHR requests",
+    "description": "Hook all XML HTTP Requests (all tabs)",
     "permissions": ["tabs", "https://www.youtube.com/", "https://www.netflix.com/"],
-    "web_accessible_resources": ["patch.js"],
     "background": {
-      "scripts": ["XMLHttpRequestHOOK.js"],
+      "scripts": ["patch.js", "XMLHttpRequestHOOK.js"],
       "persistent": false
     },
     "manifest_version": 2
